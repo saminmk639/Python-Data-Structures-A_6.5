@@ -1,2 +1,2 @@
-# Python-Data-Structures-A_6.5
-COURSERA course on python data structures-graded assignment 1
+# Python-Data-Structures
+COURSERA course on python data structures-all graded assignments
