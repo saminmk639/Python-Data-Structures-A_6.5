@@ -1,0 +1,12 @@
+#question str = 'X-DSPAM-CONFIDENCE: 0.8475 '
+data = 'X-DSPAM-CONFIDENCE: 0.8475 '
+pos1 = data.find('0')
+print(pos1)
+
+pos2 = data.find('5')
+print(pos2)
+
+extracting = data[pos1:pos2+1]
+con = float(extracting)
+
+print(con)
