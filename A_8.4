@@ -1,0 +1,20 @@
+#8.4 Open the file romeo.txt and read it line by line. For each line, split the
+# line into a list of words using the split() method. The program should build
+#a list of words. For each word on each line check to see if the word is already
+# in the list and if not append it to the list. When the program completes,
+#sort and print the resulting words in alphabetical order.
+#You can download the sample data at http://www.py4e.com/code3/romeo.txt
+
+inp = input("Enter file:") #select the file
+fh = open(inp) #enter file
+lst = list() #making an empty list
+for line in fh: #for every line of the file
+    word = line.rstrip().split() #cutting off the white space to the right and splitting them into words
+
+    for element in word: #going through each word
+        if element in lst: #if the words repeat in the empty list
+            continue #do nothing
+        else: #if not repeat
+            lst.append(element) #then add them to the list
+lst.sort() #sort them alphabetically
+print(lst) #printing the final list
